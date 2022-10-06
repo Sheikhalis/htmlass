@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyLoan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: 2000px 1000px;
+        font-family: "Poppins", sans-serif;
+      }
+      .left {
+        display: inline;
+        overflow: auto;
+        padding: 0px;
+        /* border: 2px solid red; */
+        border: 1px solid rgb(211, 235, 235);
+      }
+      .left img {
+        margin: 40px 0px;
+        position: absolute;
+        left: 60px;
+      }
+      .text {
+        display: inline;
+        position: absolute;
+        margin: 40px 0px;
+        font-size: 30px;
+        left: 110px;
+      }
+      .right {
+        /* border: 2px solid red; */
+        border: 1px solid rgb(211, 235, 235);
+        position: absolute;
+        right: 60px;
+        margin: 18px 0px;
+      }
+      .right ul li {
+        display: inline;
+        margin: 0px 10px;
+      }
+      .btn {
+        border: none;
+        background: none;
+        font-size: 20px;
+      }
+      .btn:hover {
+        cursor: pointer;
+        color: gray;
+      }
+      #specialBtn {
+        background-color: rgb(58, 171, 122);
+        color: white;
+        padding: 15px;
+      }
+      #specialBtn:hover {
+        color: black;
+      }
+      header {
+        position: sticky;
+        background-color: rgb(211, 235, 235);
+      }
+      .headerNext {
+        margin: 200px 150px;
+        /* border: 2px solid red; */
+        border: 1px solid rgb(235, 243, 243);
+        width: 80%;
+      }
+      .frontText {
+        float: left;
+        width: 30%;
+        /* display: inline-block; */
+      }
+      #frontText1 {
+        font-size: 50px;
+      }
+      #frontText2 {
+        font-size: 20px;
+        margin: 40px 0px;
+        /* float: right; */
+      }
+      #specialBtn1 {
+        background: none;
+        color: black;
+        font-size: 20px;
+        padding: 15px 35px;
+      }
+      #specialBtn1:hover {
+        background-color: rgb(58, 171, 122);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #specialBtn2 {
+        border: none;
+        background: none;
+        font-size: 20px;
+        background-color: rgb(58, 171, 122);
+        color: white;
+        padding: 15px 181px;
+        margin: 20px;
+      }
+      #specialBtn2:hover {
+        cursor: pointer;
+        color: black;
+      }
+      .headerNext1 {
+        width: 50%;
+        float: right;
+        border: 4px solid white;
+        background-color: white;
+      }
+      .headerNext1 select {
+        font-size: 20px;
+        padding: 5px 150px;
+        margin: 10px 20px;
+        text-align: left;
+        /* background-color: rgb(58, 171, 122);
+        color: white; */
+      }
+      #headerNextText1 {
+        font-size: 30px;
+        text-align: center;
+        color: rgb(58, 171, 122);
+      }
+      #headerNextText2 {
+        text-align: center;
+      }
+      .smallFontText {
+        font-size: 15px;
+        margin: 0px 20px;
+      }
+      #month {
+        padding: 5px 158px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="logo.jpg" alt="Err loading" />
+      </div>
+      <div class="text left">EasyLo.</div>
+      <div class="right">
+        <ul>
+          <li><button class="btn">Home</button></li>
+          <li><button class="btn">About</button></li>
+          <li><button class="btn">Services</button></li>
+          <li><button class="btn">Blog</button></li>
+          <li><button class="btn">Contact</button></li>
+          <li><button id="specialBtn" class="btn">Apply For Loan</button></li>
+        </ul>
+      </div>
+    </header>
+    <div class="headerNext">
+      <div class="frontText">
+        <div id="frontText1">The simple online home <u>loan</u>.</div>
+        <div id="frontText2">
+          Financial uncertainty is hard on employees, and causes even.
+        </div>
+        <button id="specialBtn1"><b>Our Servies</b></button>
+      </div>
+      <div class="headerNext1">
+        <form action="fakeForm.php">
+          <div id="headerNextText1">
+            <b>How much you want?</b>
+          </div>
+          <div id="headerNextText2" class="smallFontText">
+            We provide online instant cash loans
+          </div>
+          <br /><br />
+          <div class="smallFontText">AMOUNT YOU WANT</div>
+          <select name="amount" id="amount">
+            <option value="select" selected>Select Amount</option>
+            <option value="c1">Category1</option>
+            <option value="c2">Category2</option>
+            <option value="c3">Category3</option>
+          </select>
+          <div class="smallFontText">MONTH</div>
+          <select name="month" id="month">
+            <option value="selectM" selected>Select Month</option>
+            <option value="c4">Year</option>
+            <option value="c5">Week</option>
+            <option value="c6">Days3</option>
+          </select>
+          <div class="smallFontText">You have to pay:<b> &dollar;0</b></div>
+          <button id="specialBtn2">Apply Now</button>
+          <div id="headerNextText2" class="smallFontText">
+            We provide online instant cash loans
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
